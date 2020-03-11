@@ -49,6 +49,7 @@ class Scraper
     :profile_quote => profile_quote,
     :bio => bio}
     student << student_sm
+    
     student
   end
 
