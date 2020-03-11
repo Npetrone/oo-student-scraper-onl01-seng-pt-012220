@@ -38,10 +38,10 @@ class Scraper
       elsif element.attr('href').include?(".com")
         student[:blog] = element.attr('href')
       end
-      student[:profile_quote] = doc.css(".vitals-container .vitals-text-container .profile-quote").text
-      student[:bio] = doc.css(".bio-block.details-block .bio-content.content-holder .description-holder p").text
+      
     end
-   
+   student[:profile_quote] = doc.css(".vitals-container .vitals-text-container .profile-quote").text
+      student[:bio] = doc.css(".bio-block.details-block .bio-content.content-holder .description-holder p").text
     # student_sm = {:twitter => twitter,
     # :linkedin => linkedin,
     # :github => github,
