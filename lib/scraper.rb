@@ -13,7 +13,7 @@ class Scraper
     
     doc.css(div.student-card).each do |student|
       name = student.css(".student-name").text
-      location = student.css("student-location").text
+      location = student.css(".student-location").text
       profile = student.css("a").attribute("href").value
       info = {:name => name,
               :location => location,
