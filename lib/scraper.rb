@@ -29,6 +29,7 @@ class Scraper
     students = {}
     socialmedia = doc.css("social-icon-container a").attribute("href")
     socialmedia.each do |link|
+      if 
     
     
     
