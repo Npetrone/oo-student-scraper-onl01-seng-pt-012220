@@ -3,8 +3,6 @@ require 'pry'
 require 'nokogiri'
 
 class Scraper
-  
-  attr_accessor :name, :location, :profile_url
 
 html = open("https://learn-co-curriculum.github.io/student-scraper-test-page/index.html")
 doc = Nokogiri::HTML(html)
