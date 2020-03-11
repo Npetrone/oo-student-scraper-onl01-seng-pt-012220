@@ -4,6 +4,8 @@ require 'nokogiri'
 
 class Scraper
 
+html = open("")
+
   def self.scrape_index_page(index_url)
     
   end
