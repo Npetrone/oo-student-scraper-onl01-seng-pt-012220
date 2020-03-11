@@ -4,7 +4,7 @@ require 'nokogiri'
 
 class Scraper
 
-html = open("https://learn-co-curriculum.github.io/student-scraper-test-page/index.html")
+# html = open("https://learn-co-curriculum.github.io/student-scraper-test-page/index.html")
 
 
   def self.scrape_index_page(index_url)
