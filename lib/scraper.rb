@@ -37,6 +37,7 @@ class Scraper
         student[:github] = link
       elsif link.include?(".com")
         student[:blog] = link
+        binding.pry
       end
       student[:profile_quote] = doc.css(".profile-quote").text
       student[:bio] = doc.css("div.description-holder p").text
