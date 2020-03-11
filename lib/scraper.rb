@@ -41,7 +41,7 @@ class Scraper
       student[:profile_quote] = doc.css(".profile-quote").text
       student[:bio] = doc.css("div.description-holder p").text
     end
-    binding.pry
+    # binding.pry
     # student_sm = {:twitter => twitter,
     # :linkedin => linkedin,
     # :github => github,
