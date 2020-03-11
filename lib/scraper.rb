@@ -25,6 +25,10 @@ class Scraper
   end
 
   def self.scrape_profile_page(profile_url)
+    doc = Nokogiri::HTML(open("https://learn-co-curriculum.github.io/student-scraper-test-page/index.html"))
+    
+    
+    
     
   end
 
