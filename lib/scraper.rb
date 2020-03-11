@@ -10,6 +10,7 @@ html = open("https://learn-co-curriculum.github.io/student-scraper-test-page/ind
 doc = Nokogiri::HTML(html)
 
   def self.scrape_index_page(index_url)
+    
     students = doc.css()
   end
 
