@@ -12,6 +12,9 @@ class Scraper
     students = []
     
     doc.css(div.student-card).each do |student|
+      name =
+      location = 
+      profile = 
     
     
     
