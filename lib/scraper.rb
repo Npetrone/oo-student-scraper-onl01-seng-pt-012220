@@ -30,6 +30,12 @@ class Scraper
     socialmedia = doc.css("social-icon-container a").attribute("href")
     socialmedia.each do |link|
       if link.include?("twitter")
+        student[:twitter] = link
+      if link.include?("linkedin")
+        
+      if link.include?("github")
+        
+      if link.include?("")
     
     
     
