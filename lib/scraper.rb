@@ -38,7 +38,7 @@ class Scraper
       elsif element.attr('href').include?(".com")
         student[:blog] = element.attr('href')
       end
-      student[:profile_quote] = doc.css(".profile-quote").text
+      student[:profile_quote] = doc.css(".vitals-container .vitals-text-container .profile-quote").text
       student[:bio] = doc.css("div.description-holder p").text
     end
     # binding.pry
