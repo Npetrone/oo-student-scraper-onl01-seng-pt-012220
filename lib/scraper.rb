@@ -41,7 +41,7 @@ class Scraper
       student[:profile_quote] = doc.css(".vitals-container .vitals-text-container .profile-quote").text
       student[:bio] = doc.css(".bio-block.details-block .bio-content.content-holder .description-holder p").text
     end
-    binding.pry
+   
     student_sm = {:twitter => twitter,
     :linkedin => linkedin,
     :github => github,
@@ -49,7 +49,7 @@ class Scraper
     :profile_quote => profile_quote,
     :bio => bio}
     student << student_sm
-    
+     binding.pry
     student
   end
 
