@@ -30,13 +30,13 @@ class Scraper
     socialmedia = doc.css(".social-icon-container a").collect{|icon| icon.attribute("href").value}
     socialmedia.each do |link|
       if element.attr('href').include?("twitter")
-        student[:twitter] = element.attr('href')
+        student << [:twitter] = element.attr('href')
       elsif element.attr('href').include?("linkedin")
-        student[:linkedin] = element.attr('href')
+        student << [:linkedin] = element.attr('href')
       elsif element.attr('href').include?("github")
-        student[:github] = element.attr('href')
+        student << [:github] = element.attr('href')
       elsif element.attr('href').include?(".com")
-        student[:blog] = element.attr('href')
+        student << [:blog] = element.attr('href')
       end
       student[:profile_quote] = doc.css(".vitals-container .vitals-text-container .profile-quote").text
       student[:bio] = doc.css(".bio-block.details-block .bio-content.content-holder .description-holder p").text
