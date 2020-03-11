@@ -41,13 +41,13 @@ class Scraper
       student[:profile_quote] = doc.css(".profile-quote").text
       student[:bio] = doc.css("div.description-holder p").text
     end
-    student_sm = {:twitter => twitter,
-    :linkedin => linkedin,
-    :github => github,
-    :blog => blog,
-    :profile_quote => profile_quote,
-    :bio => bio}
-    student << student_sm
+    # student_sm = {:twitter => twitter,
+    # :linkedin => linkedin,
+    # :github => github,
+    # :blog => blog,
+    # :profile_quote => profile_quote,
+    # :bio => bio}
+    # student << student_sm
     student
   end
 
