@@ -15,6 +15,7 @@ class Scraper
       name = student.css(".student-name").text
       location = student.css("student-location").text
       profile = student.css("a").attribute("href").value
+      info = {:name => name,
     
     
     
