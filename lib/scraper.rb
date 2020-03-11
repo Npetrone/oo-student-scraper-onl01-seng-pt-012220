@@ -11,7 +11,7 @@ class Scraper
     doc = Nokogiri::HTML(open("https://learn-co-curriculum.github.io/student-scraper-test-page/index.html"))
     students = []
     
-    
+    doc.css()
     
     
     
