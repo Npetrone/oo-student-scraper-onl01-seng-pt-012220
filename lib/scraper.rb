@@ -31,11 +31,11 @@ class Scraper
     socialmedia.each do |link|
       if link.include?("twitter")
         student[:twitter] = link
-      if link.include?("linkedin")
+      elsif link.include?("linkedin")
         student[:linkedin] = link
-      if link.include?("github")
+      elsif link.include?("github")
         student[:github] = link
-      if link.include?("")
+      elsif link.include?("")
         student[:blog] = link
       end
     end
