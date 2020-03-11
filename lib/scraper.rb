@@ -5,10 +5,10 @@ require 'nokogiri'
 class Scraper
 
 html = open("https://learn-co-curriculum.github.io/student-scraper-test-page/index.html")
-doc = Nokogiri::HTML(html)
+
 
   def self.scrape_index_page(index_url)
-    
+    doc = Nokogiri::HTML(html)
     students = doc.css()
   end
 
