@@ -28,7 +28,7 @@ class Scraper
     doc = Nokogiri::HTML(open("https://learn-co-curriculum.github.io/student-scraper-test-page/index.html"))
     students = {}
     socialmedia = doc.css("social-icon-container a").attribute("href")
-    
+    socialmedia.each do |link|
     
     
     
