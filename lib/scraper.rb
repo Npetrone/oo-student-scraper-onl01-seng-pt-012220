@@ -48,7 +48,7 @@ class Scraper
     :blog => :blog,
     :profile_quote => :profile_quote,
     :bio => :bio}
-    student < student_sm
+    student << student_sm
     # binding.pry
     student
   end
